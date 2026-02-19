@@ -66,6 +66,18 @@
 \onehalfspace
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% Pretty graph
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, calc} % добавили calc
+
+\tikzstyle{start} = [ellipse, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
+\tikzstyle{stop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=red!30]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=blue!20]
+\tikzstyle{decision} = [diamond, aspect=2, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=yellow!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%%%% Some dark TeX magic %%%%%
 \addto\captionsrussian{\renewcommand{\contentsname}{Содержание}}
 \addto\captionsrussian{\renewcommand{\listfigurename}{Список иллюстраций}}
