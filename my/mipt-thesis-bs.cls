@@ -24,6 +24,7 @@
 \RequirePackage{indentfirst}
 \RequirePackage{fancyhdr}
 \RequirePackage{nopageno}
+\usepackage{float}
 \RequirePackage{tocloft}
 % Style file with additional packages
 \RequirePackage{mipt-thesis}
@@ -73,6 +74,7 @@
 
 \tikzstyle{start} = [ellipse, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
 \tikzstyle{stop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=red!30]
+\tikzstyle{body} = [rectangle, draw, text width=4cm, align=center, minimum height=1cm]
 \tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=blue!20]
 \tikzstyle{decision} = [diamond, aspect=2, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=yellow!30]
 \tikzstyle{arrow} = [thick,->,>=stealth]
