@@ -1,0 +1,8 @@
+\babel@toc {russian}{}\relax 
+\beamer@sectionintoc {1}{Исторические сведения}{3}{0}{1}
+\beamer@sectionintoc {2}{Закон Пашена}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Формулировка закона}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{Опыт Таунсенда}{5}{0}{2}
+\beamer@subsectionintoc {2}{3}{Зависимость $\alpha $, $\beta $ от $E$, $P$}{7}{0}{2}
+\beamer@subsectionintoc {2}{4}{Условие пробоя}{8}{0}{2}
+\beamer@sectionintoc {3}{Вывод}{11}{0}{3}

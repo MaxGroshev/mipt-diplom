@@ -1,0 +1,27 @@
+\babel@toc {russian}{}\relax 
+\contentsline {chapter}{\numberline {1}Введение}{1}{}%
+\contentsline {chapter}{\numberline {2}Постановка проблемы}{3}{}%
+\contentsline {section}{\numberline {2.1}Цели работы:}{3}{}%
+\contentsline {section}{\numberline {2.2}Задачи работы:}{3}{}%
+\contentsline {chapter}{\numberline {3}Обзор существующих решений}{5}{}%
+\contentsline {section}{\numberline {3.1}Верификация байт-кода динамически типизированных яп:}{5}{}%
+\contentsline {section}{\numberline {3.2}Верификация байт-кода статически типизированных яп:}{6}{}%
+\contentsline {chapter}{\numberline {4}Теоретическая часть}{9}{}%
+\contentsline {section}{\numberline {4.1}Устройство верификатора}{9}{}%
+\contentsline {subsection}{\numberline {4.1.1}Режимы верификации:}{9}{}%
+\contentsline {subsection}{\numberline {4.1.2}Cхема работы: }{10}{}%
+\contentsline {subsubsection}{Разрешение идентификаторов}{10}{}%
+\contentsline {subsubsection}{Разрешение типов}{10}{}%
+\contentsline {subsubsection}{Проверка графа потока управления}{10}{}%
+\contentsline {subsubsection}{Абстрактная интерпритация}{11}{}%
+\contentsline {section}{\numberline {4.2}ets opcodes}{14}{}%
+\contentsline {subsection}{\numberline {4.2.1}Мотивация появления ETS-инструкций}{15}{}%
+\contentsline {subsection}{\numberline {4.2.2}Основные семейства ETS-инструкций}{15}{}%
+\contentsline {subsection}{\numberline {4.2.3}Специальные семантики ETS}{16}{}%
+\contentsline {section}{\numberline {4.3}any opcodes}{17}{}%
+\contentsline {subsection}{\numberline {4.3.1}Модель значения \texttt {any}}{17}{}%
+\contentsline {subsection}{\numberline {4.3.2}Базовые динамические инструкции}{17}{}%
+\contentsline {subsection}{\numberline {4.3.3}Доступ к свойствам и элементам динамических значений}{18}{}%
+\contentsline {subsection}{\numberline {4.3.4}Динамические вызовы}{19}{}%
+\contentsline {subsection}{\numberline {4.3.5}Роль any-инструкций в архитектуре платформы}{19}{}%
+\contentsline {chapter}{Благодарности}{21}{}%
