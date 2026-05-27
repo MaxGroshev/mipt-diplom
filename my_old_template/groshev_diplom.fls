@@ -2,7 +2,7 @@ PWD /Users/max/studing/diplom/my
 INPUT /usr/local/texlive/2024/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT groshev_diplom.tex
+INPUT /Users/max/studing/diplom/my/groshev_diplom.tex
 OUTPUT groshev_diplom.log
 INPUT ./mipt-thesis-bs.cls
 INPUT mipt-thesis-bs.cls

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1779869724.9853 "groshev_diplom.tex" "groshev_diplom.pdf" "groshev_diplom" 1779869725.81101 0
+["pdflatex"] 1779872234.79095 "/Users/max/studing/diplom/my/groshev_diplom.tex" "groshev_diplom.pdf" "groshev_diplom" 1779872235.65075 0
   "/Users/max/Library/texlive/2024/texmf-var/fonts/tfm/lh/lh-t2a/labx1200.tfm" 1738326918.83046 3308 eee81981029f67083258db36df06e523 ""
   "/Users/max/Library/texlive/2024/texmf-var/fonts/tfm/lh/lh-t2a/labx2488.tfm" 1768893018.00079 3304 10c1a71cb294f8a8339c46823bcc15f2 ""
   "/Users/max/Library/texlive/2024/texmf-var/fonts/tfm/lh/lh-t2a/lait1728.tfm" 1779868595.15444 1272 fbc670f792c79a7e8fc8b0a58151461c ""
@@ -17,6 +17,7 @@
   "/Users/max/Library/texlive/2024/texmf-var/fonts/tfm/lh/lh-t2a/lati1440.tfm" 1769345563.48393 3528 460e6901416a816cf4afa844b5d54101 ""
   "/Users/max/Library/texlive/2024/texmf-var/fonts/tfm/lh/lh-t2a/latt1000.tfm" 1770313498.76926 1272 55f67101730a20777decd892fb4b4e3e ""
   "/Users/max/Library/texlive/2024/texmf-var/fonts/tfm/lh/lh-t2a/latt1200.tfm" 1768892176.70642 1272 bf3bb5cc29880b269c8bcb412a1ac6e2 ""
+  "/Users/max/studing/diplom/my/groshev_diplom.tex" 1779869719.25583 57058 81d8ca5cf7c2f36f300017994a82f7da ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc" 1136849721 3141 82d5616418ed8d5de703b3951bedecb4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -183,9 +184,9 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1738326819.73402 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1738326770 8221423 9b1bb96e5f3f9fff9f34bc32d768febb ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "groshev_diplom.aux" 1779869725.68561 5735 618f922cf3e97d1d2ba99801fe787d43 "pdflatex"
+  "groshev_diplom.aux" 1779872235.53947 5735 618f922cf3e97d1d2ba99801fe787d43 "pdflatex"
   "groshev_diplom.tex" 1779869719.25583 57058 81d8ca5cf7c2f36f300017994a82f7da ""
-  "groshev_diplom.toc" 1779869725.687 2511 4e099c55ed2d0d81c748c1fe8836f95b "pdflatex"
+  "groshev_diplom.toc" 1779872235.54088 2511 4e099c55ed2d0d81c748c1fe8836f95b "pdflatex"
   "mipt-thesis-bs.cls" 1779869226.38917 9487 a379cef2f60248b611cf538fe52734ac ""
   "mipt-thesis.sty" 1768892591.50293 0 d41d8cd98f00b204e9800998ecf8427e ""
   "pics/illegal_jmp.png" 1772738796.33317 23385 7303b42ea664b959f60206171bd958d1 ""
