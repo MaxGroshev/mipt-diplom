@@ -355,8 +355,62 @@ $$[l_1, r_1] \sqsubseteq [l_1, r_2] \Leftrightarrow l_2 \leq l_1 \wedge  r_1 \le
 $$[0,0]\sqsubseteq[0,1]\sqsubseteq[0,2] \sqsubseteq ...$$
 
 Данный цепочка может возрастать долго, поэтому домен состояний $x$ будет определен, как $[0,+\inf]$
-% \section{ets opcodes}
-% \section{any opcodes}
+\section{ets opcodes}
+
+Одной из отличительных особенностей целевой платформы от java-подобных платформ является
+поддержка объединения типов и наличие специального набора инструкций для эффективного
+взаимодействия с ними на уровне виртуальной машины. Под объединением типов в данной работе
+подразумевается ссылочный тип, который представляет из себя комбинацию нескольких типов.
+
+\begin{lstlisting}[language=Python, label={lst:union}, caption={Пример кода с объединением типов}]
+    class A { foo() { return 1 }}
+    class B { foo() { return 2 }}
+    
+    function bar(v : A|B) { 
+        v.foo()
+    }
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python, caption={Представление кода из Листинга~\ref{lst:union}} на 
+    уровне байткода]
+    lda.obj a0
+    sta.obj v1
+    ets.call.name.short union.%%union_prop-A|B.foo:(union.%%union_prop-A|B), v1
+    return.void
+\end{lstlisting}
+
+Компилятор генерирует синтетический класс, на этапе кодогенерации будет построена инструкция вызова
+метода данного класса, данная логика распространяется и на обращение к полям объединения. Важным является
+тот факт, что язык запрещает создание объекта обоъединения через оператор new. Таким образом на этапе
+исполнения в регистре будет находиться экземпляр конкретного класса, а из структуры инструкции можно
+однозначно получить имя метода или поля к которому идет обращение. Однако на этапе верификации
+отсутствует информации о значение регистра.
+
+\section{any opcodes}
+
+Также важной особенностью исследуемой платформы является поддержка взаимодействия с динамической средой.
+При этом данная особенность потенциально может послужить источником ошибок. 
+
+В виртуальной машине ArkTS взаимодействие с динамикой осуществляется по средствам any байткодов
+
+\begin{lstlisting}[language=Python, label={lst:union}, caption={Пример кода, взаимодействия с динамикой}]
+    // dynamic.js
+    class A { prop = 1}
+    function foo() { return new A() }
+
+    // static.ets
+    import { A, foo } from "./dynamic.js"
+    let a = foo()["prop"]
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python, label={lst:union}, caption={Пример кода, взаимодействия с динамикой}]
+    lda.obj a0
+    sta.obj v1
+    any.ldbyname v1, "prop"
+    return.obj
+
+\end{lstlisting}
+
 
 
 
@@ -364,11 +418,6 @@ $$[0,0]\sqsubseteq[0,1]\sqsubseteq[0,2] \sqsubseteq ...$$
 % если verifier сказал «ok» → ошибки невозможны
 % не complete:
 % может отвергнуть валидный код (false positives)
-
-% \begin{lstlisting}[language=Python]
-% def f(x):
-%     return x*x
-% \end{lstlisting}
 
 \backmatter
 
