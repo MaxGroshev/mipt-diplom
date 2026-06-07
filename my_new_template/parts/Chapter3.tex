@@ -201,8 +201,16 @@ $$[0,0]\sqsubseteq[0,1]\sqsubseteq[0,2] \sqsubseteq ...$$
 необходимо уметь безопасно обращаться к общим членам объединения.
 
 \begin{lstlisting}[language=Python, label={lst:union_example}, caption={Пример кода с объединением типов}]
-    class A { foo() { return 1 }}
-    class B { foo() { return 2 }}
+    class A { 
+        foo() { 
+            return 1 
+        }
+    }
+    class B { 
+        foo() { 
+            return 2 
+        }
+    }
     
     function bar(v : A|B) { 
         v.foo()
@@ -311,14 +319,22 @@ nullish-состояния в семантике языка. Наличие от
 рантайма через поиск поля или аксессора по имени.
 \begin{lstlisting}[language=Python, label={lst:any_example}, caption={Пример взаимодействия со значением из динамической среды}]
     // dynamic.js
-    class A { prop = 1}
-    function foo() { return new A() }
+    class A { 
+        prop = 1
+    }
+    function foo() { 
+        return new A() 
+    }
 
     // static.ets
-    import { A, foo } from "./dynamic.js"
+    import { 
+        A, 
+        foo
+    } from "./dynamic.js"
+    
     let a = foo()["prop"]
 \end{lstlisting}
-\newpage
+% \newpage
 \begin{lstlisting}[language=Python, label={lst:any_bc}, caption={Представление кода из Листинга~\ref{lst:any_example} на уровне байткода}]
     lda.obj a0
     sta.obj v1
