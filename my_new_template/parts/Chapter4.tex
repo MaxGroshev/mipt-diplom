@@ -29,6 +29,28 @@ runtime-классы, помеченные как union. Это позволил
 непосредственно из runtime-описания класса и использовать его в операциях подтипизации и анализа
 сигнатур.
 
+\begin{lstlisting}[language=Python, label={lst:range_impl}, caption={Пример кода для обработки \texttt{ets.call.name.range}}]
+ClassLinkerContext *CoreClassLinkerExtension::GetCommonContext(Span<Class *> classes)
+{
+    ASSERT(!classes.Empty());
+    auto *commonCtx = classes[0]->GetLoadContext();
+
+    size_t foundClassesNum = 0;
+    while (!commonCtx->IsBootContext()) {
+        for (auto *klass : classes) {
+            if (commonCtx->FindClass(klass->GetDescriptor()) != nullptr) {
+                foundClassesNum++;
+            }
+        }
+        if (foundClassesNum == classes.Size()) {
+            break;
+        }
+        commonCtx = GetBootContext();  // yield the uppermost context conservatively
+    }
+    return commonCtx;
+}
+\end{lstlisting}
+
 Дополнительно была доработана работа с контекстами загрузки классов. Для union-типа важно, чтобы
 верификатор мог выбрать общий контекст, в котором корректно видны все составляющие классы
 объединения. С этой целью в расширение class linker был добавлен алгоритм поиска общего
