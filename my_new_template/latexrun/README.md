@@ -59,7 +59,7 @@ Integrating with make
 
 latexrun does its own dependency tracking (at a finer granularity than
 `make`).  Since it also does nothing if no dependencies have changed,
-it's easy to integrate with `make` using phony targets.  Here's a
+it's easy to integrate with `make` using phony targplugin.  Here's a
 complete example:
 
 ```Makefile
